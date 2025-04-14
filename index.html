@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorando o Mundo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header{
+            background: linear-gradient(to right, #00b4d8, #0077b6);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1{
+            font-size: 2.5rem;
+        }
+        header h2 {
+            font-weight: normal;
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+        nav {
+            background-color: #0096c7;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+      
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        aside{
+            background-color: #e3f2fd;
+            padding: 15px;
+            margin: 20px;
+            border-radius: 8px;
+        }
+        h3 {
+        margin-bottom: 10px;
+        color: #0077b6;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        input, textarea, button {
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+            padding: 10px;
+        } 
+        button {
+            background-color: #00b4d8;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        img, video {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #023e8a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        @media (max-widch: 768px) {
+        nav ul {
+            flex-direction: column;
+            align-items: center;
+        }
+        header h1 {
+            font-size: 2rem;
+        }
+        header h2 {
+            font-size: 1rem;
+        }
+        }
+    </style>
+</head>
+<body>
+    <!--Cabeçalho-->
+    <header>
+        <h1>EXPLORANDO O MUNDO</h1>
+        <h2>Relatos, dicas e inspirações para sua próxima viagem</h2>
+         <!--Navegação-->
+        <nav>
+            <ul>
+              <li><a href="#destinos" style="color: white;">Destinos</a></li>
+              <li><a href="#dicas" style="color: white;"">Dicas</a></li>
+              <li><a href="#contato" style="color: white;"">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+      
+    <!--Seção de destinos (e mídia)-->
+    <section id="destinos">
+        <h3>Viagem pela Europa</h3>
+        <article>
+            <p>Explorar cidades como <strong>Paris</strong> é como entrar em um livro de história vivo.</p>
+                <p>A experiência na <strong>França</strong> é incrível. É possivel visitar a Torre Eiffel e explorar os museus de Paris.</p>
+                <p>Além de aproveitar para <em>experimentar a culinária local</em>, cheia de queijos e vinhos deliciosos.</p>
+                <img src="eiffel.jpg" alt="Foto da Torre Eiffel em Paris" title="Torre Eiffel" style="height: 10%; width: 10%;" >
+            </article>
+
+        <h3>Descobrindo a Ásia</h3>
+        <article>
+            <p>No Japão, encanta-se com as grandes cidades e com a cultura. Conhecer <strong>Kyoto</strong> é uma experiência inesquecível.</p>
+            <video src="istockphoto-1371228411-640_adpp_is.mp4" controls title="Vídeo no Japão" style="height: 20%; width: 20%;">Seu navegador não suporta o vídeo</video>
+        </article>
+        
+        <h3>Explorando a América do Sul</h3>
+        <article>
+            <p>A exuberante América do Sul vai te deixar sem fôlego!</p>
+            <p>O <em>Chile</em> surpreende com suas paisagens e a simpatia das pessoas. As cordilheiras são maravilhosas, e o som de sua natureza espetacular.</p>
+            <audio src="nature-ambience-323729.mp3" controls>Seu navegador não suporta o áudio</audio>
+        </article>
+    </section>
+
+    <!--Seção de dicas-->
+    <section id="dicas">
+        <h3>Dicas para viagens</h3>
+        <article>
+            <h4>Como planejar um roteiro</h4>
+            <ol>   
+                <li>Escolha o destino</li>
+                <li>Pesquise as principais atrações</li>
+                <li>Monte um cronograma diário</li>
+            </ol>
+            <h4>O que levar na mala</h4>
+            <ul>
+                <li>Roupas confortáveis e apropriadas para o clima</li>
+                <li>Documentos importantes</li>
+                <li>Adaptadores (ex: de tomada)</li>
+            </ul>
+            <h4>Como economizar dinheiro</h4>
+            <ul>
+                <li>Pesquise voos com antecedência</li>
+                <li>Use aplicativos de desconto e de comparação de preços</li>
+                <li>Reserve as hospedagens com antecedência</li>
+            </ul>
+        </article>
+    </section>
+
+    <!--Conteúdo Relacionado-->
+    <aside>
+        <h3>Links Interessantes</h3>
+        <ul>
+            <li><a href="https://viajenaviagem.com" target="_blank" title="Viaje na Viagem">Viaje na Viagem</a></li>
+            <li><a href="https://melhoresdestinos.com.br" target="_blank" title="Melhores Destinos">Melhores Destinos</a></li>
+        </ul>
+    <!--Citação-->
+        <blockquote cite="https://www.pensador.com/frase/MTM1NzM5Nw/">"Viajar é mudar a roupa da alma." - Mario Quintana</blockquote>
+    </aside>
+
+    <!--Formulário de contato-->
+    <section id="contato">
+        <h3>Envie sua dúvida ou comentário</h3>
+        <form action="recebe_dados.php" method="get">
+            <fieldset>
+
+                <label for="name">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" required>
+                <br><br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite o seu e-mail" required>
+                <br><br>
+
+                <label for="mensagem">Mensagem:</label>
+                <br>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem" required cols="50"></textarea>
+                
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </section>
+
+    <!--Rodapé-->
+    <footer>
+        <p>&copy; 2025 Explorando o Mundo. Todos os direitos reservados.</p>
+        <p>Contato: explorando@email.com</p>
+        <p><a href="https://www.essemundoenosso.com.br/" target="_blank" style="color: white;">Visite outros blogs</a></p>
+    </footer>
+</body>
+</html>
