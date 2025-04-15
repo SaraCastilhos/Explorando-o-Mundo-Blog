@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorando o Mundo</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <!--Cabeçalho-->
+    <header>
+        <h1>Explorando o Mundo</h1>
+        <h2>Relatos, dicas e inspirações para sua próxima viagem</h2>
+         <!--Navegação-->
+        <nav>
+            <ul>
+              <li><a href="index.html">Destinos</a></li>
+              <li><a href="dicas.html">Dicas</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Formulário de contato-->
+    <section>
+        <h3>Envie sua dúvida ou comentário</h3>
+        <form action="recebe_dados.php" method="get">
+            <fieldset>
+
+                <label for="name">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" required>
+                <br><br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite o seu e-mail" required>
+                <br><br>
+
+                <label for="mensagem">Mensagem:</label>
+                <br>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem" required cols="50"></textarea>
+                
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </section>
+
+    <!--Rodapé-->
+    <footer>
+        <p>&copy; 2025 Explorando o Mundo. Todos os direitos reservados.</p>
+        <p>Contato: explorando@email.com</p>
+        <p><a href="https://elizabethwerneck.com/" target="_blank" style="color: white;">Outro blog recomendado</a></p>
+    </footer>
+</body>
+</html>
