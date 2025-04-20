@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorando o Mundo</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    <style>
+        /*Esconde o submenu*/
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background: #00b4d8;
+            border: 1px solid #ccc;
+        }
+        /*Mostra o submenu ao passar o mouse*/
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        /*Estilo dos links*/
+        nav a {
+            display: block;
+            color: #333;
+        }
+        .dropdown-content .a:hover{
+            background: #ddd;
+        }
+        /*Estrutura dos artigos*/
+        article {
+            padding: 0.3rem; background-color: white; display: inline-block; width: 30%; text-align: center; margin: 15px; border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <!--Cabeçalho-->
+    <header>
+        <h1>Explorando o Mundo</h1>
+        <h2>Relatos, dicas e inspirações para sua próxima viagem</h2>
+
+    <!--Navegação-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li class="dropdown" >
+                  <a href="destinos.html">Destinos</a>
+                    <ul class="dropdown-content">
+                        <li style="padding: 8px"><a href="#europa">Europa</a></li>
+                        <li style="padding: 8px"><a href="#asia">Ásia</a></li>
+                        <li style="padding: 8px"><a href="#america">América</a></li>
+                    </ul>
+                </li>
+                <li><a href="dicas.html">Dicas</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Introdução-->
+    <section style="text-align: center;">
+            <h2>🗺️ Destinos</h2>
+
+            <p>Viajar é mais do que se deslocar — é viver histórias, colecionar memórias e se transformar a cada nova paisagem. Nesta seção do blog, compartilho os lugares que marcaram minha jornada pelo mundo.  
+            De cidades históricas a cenários naturais de tirar o fôlego, aqui você encontra dicas, curiosidades e experiências únicas em cada destino.</p>
+
+            <p>Prepare seu passaporte, abra o coração e venha explorar comigo os encantos da <strong>Europa</strong>, os contrastes da <strong>Ásia</strong>, as cores da <strong>América</strong> e muito mais. Cada lugar tem algo especial para contar — e esse espaço é todo dedicado a descobri-los juntos. ✈️🌎💫</p>
+    </section>
+
+    <!--Seção de destinos (e mídia)-->
+    <!--Viagem pela Europa-->
+    <section>
+        <div style="justify-content: center; align-items: center; max-width: 1500px; margin:auto; padding: 15px; border: 1px solid #ccc;">
+            
+            <h3 id="europa" style="text-align: center;">Viagem pela Europa</h3>
+            <p style="text-align: center;">A charmosa Europa, onde cada cidade parece saída de um conto de fadas.</p>
+                
+            <article>
+                  <p>Explorar cidades como <strong>Paris</strong> é como entrar em um livro de história vivo.</p>
+                  <img src="eiffel.jpg" alt="Foto da Torre Eiffel em Paris" title="Torre Eiffel" style="height: 300px; width: 300px;" >
+                  <audio src="france-music-french-accordion-paris-background-intro-theme-297734.mp3" controls>Seu navegador não suporta o áudio</audio>
+                  <p>Como folhear um romance antigo e elegante- cada esquina sussura arte, amor e poesia.</p>
+            </article>
+            <article>
+                  <p>Conheça <strong>Roma</strong> e seus monumentos impressionantes como o Coliseu e o Vaticano.</p>
+                  <img src="roma.jpg" alt="Foto do Coliseu em Roma" title="Coliseu" style="height:300px; width: 300px;" >
+                  <audio src="roma-italian-inspired-237404.mp3" controls>Seu navegador não suporta o áudio</audio>
+                  <p>Caminhando entre pedras e colunas, é como estar entre deuses antigos e eternos.</p>
+            </article>
+            <article>
+                   <p><strong>Barcelona</strong> é uma explosão de cores, sabores e formas - onde Gaudí transformou a cidade em arte.</p>
+                   <img src="barcelona-cidade.webp" alt="Foto da Cidade de Barcelona na Espanha" title="Barcelona" style="height: 300px; width: 300px;" >
+                   <audio src="the-lively-dancer-flamenco-guitar-247239.mp3" controls>Seu navegador não suporta o áudio</audio>
+                   <p>Barcelona vibra com arte e cor - onde cada batida do flamenco ecoa pelas ruas.</p>
+            </article>
+
+            <p>Viajar pela Europa é como folhear um livro de histórias vivas, onde cada cidade é uma página repleta de cultura, arte e sabores únicos. Recentemente, tive a oportunidade de fazer uma jornada por três destinos incríveis: <strong>Paris</strong>, <strong>Roma</strong> <strong>Barcelona</strong>. Cada uma dessas cidades me encantou de um jeito especial — e agora compartilho aqui um pouco dessa experiência inesquecível.</p>
+           
+            <p><strong>Paris</strong>: a cidade-luz que brilha em cada detalhe</p>
+
+            <p>Comecei a viagem por Paris, a capital francesa que é sinônimo de charme e elegância. Caminhar pelas margens do Sena, cruzar as pontes históricas e avistar a Torre Eiffel ao fundo é algo que emociona mesmo quem já viu mil fotos. Um dos meus momentos favoritos foi o pôr do sol visto do alto de Montmartre, com artistas de rua, música francesa ao vivo e uma vista de tirar o fôlego.</p>
+                
+            <p>Além dos pontos turísticos clássicos como o Louvre e a Catedral de Notre-Dame, Paris me conquistou pelos cafés aconchegantes, pelas vitrines de padarias cheias de croissants dourados e, claro, pela atmosfera romântica que está presente em cada esquina.</p>
+            
+            <p><strong>Roma</strong>: onde o passado e o presente se encontram</p> 
+            
+            <p>De Paris, segui para Roma, e o impacto foi imediato. É impossível não se sentir pequeno diante do Coliseu, não se emocionar ao visitar o Vaticano, ou não se perder (no melhor sentido) pelas ruelas de Trastevere. Roma é uma aula de história a céu aberto, mas também é vibrante, viva e cheia de energia.</p>
+            
+            <p>A gastronomia italiana, então, é um espetáculo à parte. Entre uma visita ao Fórum Romano e um passeio na Fontana di Trevi, saboreei pizzas autênticas, massas artesanais e o melhor tiramisù da minha vida. Roma é para se viver com todos os sentidos.</p>
+            
+            <p><strong>Barcelona</strong>: arte, praia e alegria</p>
+            
+            <p>A última parada foi Barcelona, na Espanha, e a cidade me surpreendeu com sua mistura de modernidade, tradição e um clima descontraído. Gaudí está em todos os lugares — seja na imponente Sagrada Família, no Parque Güell ou nas formas curiosas de suas obras espalhadas pela cidade.</p>
+            
+            <p>Além da arquitetura deslumbrante, aproveitei os dias ensolarados para caminhar pela orla de Barceloneta, explorar o bairro Gótico e experimentar tapas deliciosas em bares locais. Barcelona tem uma vibe jovem, criativa e acolhedora, perfeita para fechar a viagem com chave de ouro.</p>
+            <p>Essa <strong>viagem pela Europa</strong> foi muito mais do que um simples roteiro turístico. Foi um mergulho em culturas diferentes, sabores marcantes e momentos únicos que ficarão para sempre na memória (e nas fotos!). Se você está planejando uma aventura pelo velho continente, recomendo fortemente incluir essas três cidades — cada uma vai te oferecer uma experiência única e apaixonante.</p>
+                
+            <p>Fique de olho aqui no blog para mais relatos, dicas e curiosidades de viagem. Até a próxima aventura! 🌍✈️</p>
+        </div>
+    </section>
+        
+    <!--Descobrindo a Ásia-->
+    <section>
+        <div style="justify-content: center; align-items: center; max-width: 1500px; margin:auto; padding: 15px; border: 1px solid #ccc;">
+            
+            <h3 id="asia" style="text-align: center;">Descobrindo a Ásia</h3>
+            <p style="text-align: center;">A fascinante Ásia, um mosaico de culturas, cores e espiritualidade que desperta todos os sentidos.</p>
+                
+            <article>
+                    <p>No Japão, encanta-se com as grandes cidades e com a cultura. Conhecer <strong>Kyoto</strong> é uma experiência <em>inesquecível</em>.</p>
+                    <video src="istockphoto-1371228411-640_adpp_is.mp4" controls title="Vídeo no Japão" style="height: 70%; width: 70%;">Seu navegador não suporta o vídeo</video>
+            </article>
+            <article>
+                    <p>Na Coreia, <strong>Seul</strong> é onde o passado e o futuro se encontram - palácios ancenstrais e tecnologia lado a lado.</p>
+                    <video src="istockphoto-1093556194-640_adpp_is.mp4" controls title="Vídeo na Coreia" style="height: 70%; width: 70%;">Seu navegador não suporta o vídeo</video>
+            </article>
+            <article>
+                    <p>Na índia, <strong>Jaipur</strong>, a Cidade Rosa, encanta com seus palácios magníficos, fortalezas majestosas e cultura vibrante.</p>
+                    <video src="201413-915375406_medium.mp4" controls title="Vídeo na Índia" style="height: 70%; width: 70%;">Seu navegador não suporta o vídeo</video>
+            </article>
+
+            <p>Viajar pela Ásia é como mergulhar em um universo de tradições milenares, sabores exóticos e paisagens de tirar o fôlego. Em cada cidade, uma nova cultura, uma nova história, uma nova forma de ver o mundo. Nesta jornada inesquecível, explorei três destinos que representam a diversidade e a riqueza do continente asiático: <strong>Kyoto</strong>, <strong>Seul</strong> e <strong>Jaipur</strong>.</p>
+
+            <p><strong>Kyoto</strong>: tradição e tranquilidade no coração do Japão</p>
+
+            <p>Em <strong>Kyoto</strong>, o tempo parece seguir um ritmo diferente. A cidade respira serenidade, com seus templos antigos, jardins zen e gueixas caminhando pelas ruelas de Gion. Visitar o Templo Kinkaku-ji (Pavilhão Dourado) ao pôr do sol foi um dos momentos mais mágicos da viagem. A arquitetura tradicional, combinada com a delicadeza da cultura japonesa, me fez sentir em um cenário de filme.</p>
+
+            <p>A culinária local também é uma experiência à parte — desde o sushi mais fresco até o chá verde mais puro que já experimentei. Kyoto é perfeita para quem busca conexão com a natureza, espiritualidade e arte refinada.</p>
+
+            <p><strong>Seul</strong>: modernidade pulsante com raízes profundas</p>
+
+            <p>Saindo do silêncio dos templos japoneses, cheguei à vibrante <strong>Seul</strong>, capital da Coreia do Sul. A cidade pulsa energia e inovação, com arranha-céus espelhados, bairros cheios de estilo e uma cena cultural efervescente. Mas o mais surpreendente é como tudo isso convive com palácios reais, mercados tradicionais e rituais antigos.</p>
+
+            <p>Passear pelo Palácio Gyeongbokgung vestindo hanbok (traje típico coreano) foi como voltar no tempo, mesmo com os sons da cidade ao fundo. E, claro, não posso deixar de falar da gastronomia coreana — o famoso kimchi, os barbecues e o doce bingsu foram só algumas das delícias que experimentei por lá.</p>
+
+            <strong>Jaipur</strong>: cores, sabores e encantos da Índia
+
+            <p>Fechando a viagem com chave de ouro, fui conhecer <strong>Jaipur</strong>, a famosa "Cidade Rosa" da Índia. Logo de cara, me encantei com a arquitetura vibrante, os palácios majestosos e o caos fascinante das ruas. Jaipur é um turbilhão de cores, aromas e sensações que conquista até os viajantes mais experientes.</p>
+
+            <p>Visitei o Hawa Mahal (Palácio dos Ventos), explorei o forte Amber e me perdi nos mercados de tecidos, joias e especiarias. Cada canto da cidade conta uma história — muitas vezes com dança, música e hospitalidade calorosa.</p> 
+
+            <p><strong>Descobrir a Ásia</strong> foi uma das experiências mais transformadoras da minha vida. Cada destino me ensinou algo novo, me fez sair da zona de conforto e me conectou com culturas riquíssimas. Seja pela paz de Kyoto, a energia de Seul ou a intensidade de Jaipur, essa viagem ficará para sempre no coração — e nas fotos!</p>
+
+            <p>Se você está pensando em explorar o Oriente, não pense duas vezes. A Ásia tem muito a oferecer, e essa jornada pode ser o início de uma nova forma de enxergar o mundo. 🌏✨</p>
+         </div>
+    </section>
+
+    <!--Explorando a América do Sul-->  
+    <section>
+        <div style="justify-content: center; align-items: center; max-width: 1500px; margin:auto; padding: 15px; border: 1px solid #ccc;">
+             
+            <h3 id="america" style="text-align: center;">Explorando a América do Sul</h3>
+            <p style="text-align:center;">A exuberante América do Sul, com toda sua beleza e diversidade, vai te deixar sem fôlego!</p>
+                
+            <article>
+                    <p><strong>Paraty</strong> é poesia á beira mar - calçadas de pedra, casarões coloniais e um mar que sussura histórias antigas.</p>
+                    <img src="Paraty_Brazil_boats.avif" alt="Foto da cidade de Paraty no Brasil" title="Paraty" style="height: 300px; width: 300px;" >
+                    <audio src="ernesto-nazareth--travesso--completa.mp3" controls>Seu navegador não suporta o áudio</audio>
+                    <p>A música ecoa das raízes - entre batuques de jongo, cantos caiçaras e acortes de chorinho à beira-mar.</p>
+            </article>
+            <article>
+                    <p><strong>Cartagena</strong> vibra em cores, música e calor - uma cidade colonial que transborda charme caribenho.</p>
+                    <img src="cartagena.jpeg" alt="Foto da cidade de Cartagena na Colômbia" title="Cartagena" style="height:300px; width: 300px;" >
+                    <audio src="the-moon-of-barranquilla-cumbia-249858.mp3" controls>Seu navegador não suporta o áudio</audio>
+                    <p>Cada esquina dança ao som da cumbia e da champeta - onde o ritmo é alma e o sol nunca descansa.</p>
+            </article>
+            <article>
+                    <p>No <strong>Salar de Uyuni</strong>, céu e terra se fundem num espelho mágico que parece infinito.</p>
+                    <img src="salardeuyuni.jpg.crdownload" alt="Foto do Salar de Uyuni na Bolívia" title="Salar de Uyuni" style="height: 300px; width: 300px;" >
+                    <audio src="nature-ambience-323729.mp3" controls>Seu navegador não suporta o áudio</audio>
+                    <p>O silêncio se torna melodia - interrompido apenas pelo voo de um flamingo ou o sopro do vento.</p>
+            </article>
+            <p>O continente americano é um mosaico de belezas naturais, cidades históricas e culturas fascinantes. Da América do Sul à América Central, há sempre um destino surpreendente à espera de ser descoberto. Nesta jornada, embarquei por três lugares que me marcaram profundamente: <strong>Paraty</strong>, <strong>Cartagena</strong> e <strong>Salar de Uyuni</strong>. Três cenários distintos, mas igualmente inesquecíveis.</p>
+
+
+            <p><strong>Paraty</strong>: um refúgio colonial entre o mar e a serra</p>
+
+            <p>No litoral do Rio de Janeiro, <strong>Paraty</strong> é uma joia brasileira que parece ter parado no tempo. Suas ruas de pedra, casinhas coloridas e igrejas antigas contam histórias do período colonial, enquanto o mar calmo e as montanhas ao fundo criam um cenário digno de cartão-postal.</p>
+
+            <p>Caminhar pelo centro histórico é como folhear um livro vivo da história do Brasil. E entre um café charmoso e uma lojinha de artesanato, descobri trilhas, cachoeiras e praias paradisíacas. Paraty é perfeita para quem busca beleza, tranquilidade e cultura em um só lugar.</p>
+
+            <p><strong>Cartagena</strong>: cores, calor e encanto colombiano</p>
+
+            <p>Seguindo para o norte, me apaixonei pela <strong>Cartagena das Índias</strong>, na Colômbia. Cercada por muralhas e banhada pelo mar do Caribe, a cidade é um espetáculo de cores e alegria. Suas ruas vibrantes, suas varandas floridas e seu povo acolhedor transformam qualquer passeio em uma experiência única.</p>
+
+            <p>A cidade respira história: castelos, igrejas e fortalezas contam os tempos da colonização espanhola. E à noite, as praças se enchem de vida com música, dança e sabores irresistíveis da culinária colombiana. Cartagena é apaixonante do início ao fim.</p>
+
+            <p><strong>Salar de Uyuni</strong>: um deserto branco que desafia os sentidos</p>
+
+            <p>Por fim, uma paisagem que parece de outro planeta: o <strong>Salar de Uyuni</strong>, na Bolívia. O maior deserto de sal do mundo é simplesmente surreal. Durante a estação das chuvas, o salar se transforma em um espelho gigante que reflete o céu, criando a ilusão de caminhar entre as nuvens.</p>
+
+            <p>A vastidão branca, o silêncio absoluto e os contrastes de cores fazem desse lugar um dos cenários mais mágicos que já conheci. É o tipo de destino que nos faz sentir pequenos diante da grandeza da natureza — e extremamente gratos por fazer parte dela.</p>
+
+
+            <p><strong>Explorar a América</strong> foi uma experiência rica em diversidade e descobertas. Cada lugar visitado revelou um pedaço da alma do nosso continente — suas histórias, suas paisagens e suas pessoas. De Paraty a Cartagena, do mar ao sal, a América pulsa beleza, emoção e aventura.</p>
+
+            <p>Se você está planejando sua próxima viagem, considere olhar para mais perto. Às vezes, os destinos mais surpreendentes estão logo aqui, no nosso próprio continente. 📸💫</p>
+        </div>
+    </section>
+
+    <!--Rodapé-->
+    <footer>
+        <p>&copy; 2025 Explorando o Mundo. Todos os direitos reservados.</p>
+        <p>Contato: explorando@email.com</p>
+    </footer>
+</body>
+</html>

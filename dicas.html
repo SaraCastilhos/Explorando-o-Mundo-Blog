@@ -6,63 +6,145 @@
     <title>Explorando o Mundo</title>
     <link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
+<style>
+.dicas1 {
+      display: flex;
+    }
+    aside {
+        width: 200px;
+        background-color: #e3f2fd;
+        padding: 15px;
+        margin: 20px;
+        border-radius: 8px;
+        padding-left: 30px;
+        }
+    aside li {
+        list-style: none;
+        margin-bottom: 10px;
+    }
+    section {
+        margin: 10px;
+        gap: 30px;
+        padding-left: 50px;
+    }
+.citação {
+        padding: 10px;
+        margin: 10px;
+        background-color: #e3f2fd;
+        border-radius: 5px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+</style>
 <body>
     <!--Cabeçalho-->
     <header>
         <h1>Explorando o Mundo</h1>
         <h2>Relatos, dicas e inspirações para sua próxima viagem</h2>
-         <!--Navegação-->
+    <!--Navegação-->
         <nav>
             <ul>
-              <li><a href="index.html">Destinos</a></li>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="destinos.html">Destinos</a></li>
               <li><a href="dicas.html">Dicas</a></li>
               <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <!--Seção de dicas-->
-    <section>
-        <h3>Dicas para viagens</h3>
-        <article>
-            <h4>Como planejar um roteiro</h4>
-            <ol>   
-                <li>Escolha o destino</li>
-                <li>Pesquise as principais atrações</li>
-                <li>Monte um cronograma diário</li>
-            </ol>
-            <h4>O que levar na mala</h4>
-            <ul>
-                <li>Roupas confortáveis e apropriadas para o clima</li>
-                <li>Documentos importantes</li>
-                <li>Adaptadores (ex: de tomada)</li>
-            </ul>
-            <h4>Como economizar dinheiro</h4>
-            <ul>
-                <li>Pesquise voos com antecedência</li>
-                <li>Use aplicativos de desconto e de comparação de preços</li>
-                <li>Reserve as hospedagens com antecedência</li>
-            </ul>
-        </article>
+    <!--Introdução-->
+    <section style="text-align: center; padding-left: 20px;">
+        <h2>💡 Dicas para Viagens</h2>
+        
+        <p>Viajar bem vai além de escolher o destino certo — envolve planejamento, praticidade e aqueles truques que só aprendemos na estrada. Nesta seção, compartilho tudo o que aprendi (às vezes da forma mais divertida, outras nem tanto!) para te ajudar a aproveitar cada viagem ao máximo.
+        
+        Aqui você vai encontrar sugestões de roteiros, o que levar na mala, como economizar, aplicativos que facilitam a vida do viajante, além de conselhos sinceros sobre o que fazer — e o que evitar — em diferentes situações.</p>
+        
+        <p>Seja sua primeira viagem ou a centésima, sempre tem uma dica nova que pode fazer toda a diferença. Bora embarcar nessa com mais segurança, leveza e alegria? ✈️🎒🌍</p>
+        
     </section>
 
     <!--Conteúdo Relacionado-->
-    <aside>
-        <h3>Links Interessantes</h3>
-        <ul>
-            <li><a href="https://viajenaviagem.com" target="_blank" title="Viaje na Viagem">Viaje na Viagem</a></li>
-            <li><a href="https://melhoresdestinos.com.br" target="_blank" title="Melhores Destinos">Melhores Destinos</a></li>
-        </ul>
-    <!--Citação-->
-        <blockquote cite="https://www.pensador.com/frase/MTM1NzM5Nw/">"Viajar é mudar a roupa da alma." - Mario Quintana</blockquote>
-    </aside>
+    <div class="dicas1">
+        <aside>
+            <h3>Saiba Mais</h3>
+                <li><a href="https://viajenaviagem.com" target="_blank" title="Viaje na Viagem">Viaje na Viagem</a></li>
+                <li><a href="https://melhoresdestinos.com.br" target="_blank" title="Melhores Destinos">Melhores Destinos</a></li>
+                <li><a href="https://elizabethwerneck.com/" target="_blank" title="Viagens Elizabeth Werneck">Viagens Elizabeth Werneck</a></li>
+        </aside>
 
+        <!--Seção de dicas-->
+        <section style="display: flex; width: 100%;">
+                <div style="flex: 1;">
+                    <h4>💼 O que levar na mala? </h4>
+                        <p>Montar a mala ideal pode ser uma arte — e uma dor de cabeça! <br>A dica de ouro é: leve o essencial e adapte à sua viagem.</p>
+                        <li>Faça uma lista (roupas, documentos, eletrônicos, medicamentos).</li>
+                        <li>Pense em camadas: clima muda, e o look também precisa acompanhar.</li>
+                        <li>Aposte em peças versáteis, que combinem entre si.</li>
+                        <li>Nunca esqueça adaptadores de tomada e um powerbank!</li>
+                        
+                        <p>🧳 <strong>Dica bônus</strong>: leve sempre uma muda de roupa <br>extra na bagagem de mão — nunca se sabe quando a mala despachada <br>vai dar o perdido.</p>
+                </div>
+                <div style="flex: 1;">
+                    <h4>✈️ Como economizar em passagens e hospedagens</h4>
+                        <p>Todo mundo quer viajar bem e gastar menos, né? Aqui vão alguns <br>truques que funcionam:</p>
+                        <li>Use comparadores de preços (Skyscanner, Google Flights, Kayak).</li> 
+                        <li>Ative alertas de preço para monitorar promoções.</li>
+                        <li>Considere datas alternativas (voar em dias da semana costuma ser<br> mais barato).</li>  
+                        <li>Hospedagens? Além de hotéis, pesquise hostels, Airbnbs e até casas<br> de voluntariado.</li> 
+                        <li>Cuidado com taxas escondidas — o barato pode sair caro.</li>
+                        
+                        <p>💡 <strong>Dica bônus</strong>: limpe os cookies do navegador ou <br>use aba anônima ao pesquisar passagens.</p>
+                    
+                </div>
+        </section>
+    </div>
+
+        <section style="display: flex;">
+                <div style="flex: 0.5;">
+                    <h4>📱 Aplicativos que facilitam a vida na estrada</h4>
+                        <p>Tecnologia é a melhor amiga do viajante moderno. Aqui estão<br> meus apps indispensáveis:</p>
+                        <li><strong>Google Maps / Maps.me</strong>: para se localizar até offline</li>
+                        <li><strong>Google Tradutor</strong>: quebra qualquer barreira linguística</li>
+                        <li><strong>XE Currency</strong>: conversor de moedas atualizado</li>
+                        <li><strong>TripIt / PackPoint</strong>: organização de roteiro e checklist <br>de bagagem</li>
+                        <li><strong>Uber / Bolt / Grab</strong>: transporte prático em qualquer cidade</li>
+                        
+                        <p>🔒 <strong>Dica extra</strong>: sempre ative autenticação em dois fatores <br>e tenha um backup dos seus documentos na nuvem.</p>
+                </div>
+                
+                <div style="flex: 0.5;"> 
+                    <h4>🛂 Documentos e segurança</h4>
+                        <p>Viajar exige atenção com burocracia e cuidados pessoais. <br>Aqui vai o básico:</p>
+                        <li>Confira validade do passaporte (mínimo 6 meses de antecedência).</li>
+                        <li>Verifique se o destino exige visto ou vacina.</li>
+                        <li>Leve cópias digitais e impressas dos documentos principais.</li>
+                        <li>Tenha seguro viagem! Pode parecer opcional, mas em uma emergência, ele <br>vira seu melhor amigo.</li>
+                        <li>Em locais desconhecidos, mantenha a discrição com objetos <br>de valor.</li>
+                        
+                        <p>🔐 <strong>Dicas bônus</strong>: anote o número e endereço da embaixada <br>ou consulado brasileiro mais próximo.</p>
+                </div>
+
+                <div style="flex: 0.5;">    
+                    <h4>🧭 Dicas para aproveitar melhor o destino</h4>
+                        <p>Uma viagem bem aproveitada começa com o olhar curioso:</p>
+                        <li>Faça um roteiro, mas deixe espaço para o improviso.</li>
+                        <li>Converse com os moradores — eles sempre sabem de <br>algo fora do comum.</li>
+                        <li>Experimente a culinária local sem medo (com bom senso).</li>
+                        <li>Registre, mas também viva o momento. Nem tudo precisa <br>ir para o Instagram.</li>
+                        
+                        <p>✨ <strong>Dica final</strong>: viaje com o coração aberto. Nem tudo vai sair <br>como o planejado — e isso faz parte da magia de explorar <br>o mundo.</p>
+                </div>
+        </section>
+
+    <!--Citação-->
+    <div class="citação">
+       <blockquote> <p cite="https://www.pensador.com/frase/MTM1NzM5Nw/">"Viajar é mudar a roupa da alma." - Mario Quintana</p></blockquote>
+    </div>
 
     <!--Rodapé-->
     <footer>
         <p>&copy; 2025 Explorando o Mundo. Todos os direitos reservados.</p>
         <p>Contato: explorando@email.com</p>
-        <p><a href="https://elizabethwerneck.com/" target="_blank" style="color: white;">Outro blog recomendado</a></p>
     </footer>
 </body>
 </html>
