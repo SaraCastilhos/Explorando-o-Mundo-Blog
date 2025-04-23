@@ -6,12 +6,26 @@
     <title>Explorando o Mundo</title>
     <link rel="stylesheet" type="text/css" href="estilo.css">
 
+    <style>
+        /*Estrutura dos artigos*/
+        article {
+            padding: 0.3rem; 
+            background-color: white; 
+            display: inline-block; 
+            width: 30%; 
+            text-align: center; 
+            margin: 15px; 
+            border: 1px solid #ccc;
+        }
+    </style>
 </head>
 <body>
+    
     <!--Cabeçalho-->
     <header>
         <h1>Explorando o Mundo</h1>
         <h2>Relatos, dicas e inspirações para sua próxima viagem</h2>
+    
     <!--Navegação-->
         <nav>
             <ul>
@@ -23,52 +37,77 @@
         </nav>
     </header>
 
-    <!--Introdução-->
-    <section>
-        <h3 style="text-align: center;">🌍 Bem-vindo ao Explorando o Mundo! ✈️ Um blog onde você encontra diversas sugestões de destinos, dicas e uma rede de apoio fantástica para a sua viagem!</h3>
-    </section>
+    <!--Conteúdo Principal-->
+    <main>
+        <!--Introdução-->
+        <section>
+            <h3 style="text-align: center;">🌍 Bem-vindo ao Explorando o Mundo! ✈️ Um blog onde você encontra diversas sugestões de destinos, dicas e uma rede de apoio fantástica para a sua viagem!</h3>
+        </section>
 
-    <div class="carrossel">
-        <div class="imagens" id="imagens">
-          <img src="Paraty_Brazil_boats.avif" alt="Imagem 1">
-          <img src="salardeUyuni+flamingos.jpg" alt="Imagem 2">
-          <img src="romantics_guide_to_paris.jpg" alt="Imagem 3">
+        <!--Carrossel de Imagens-->
+        <div class="carrossel">
+            <div class="imagens" id="imagens">
+             <img src="Paraty_Brazil_boats.avif" alt="Imagem 1">
+             <img src="salardeUyuni+flamingos.jpg" alt="Imagem 2">
+             <img src="romantics_guide_to_paris.jpg" alt="Imagem 3">
+            </div>
+            <button class="anterior" onclick="voltarSlide()">&#10094;</button>
+            <button class="proximo" onclick="avancarSlide()">&#10095;</button>
         </div>
-        <button class="anterior" onclick="voltarSlide()">&#10094;</button>
-        <button class="proximo" onclick="avancarSlide()">&#10095;</button>
-    </div>
 
-      <script>
-        const imagens = document.getElementById("imagens");
-        const total = imagens.children.length;
-        let index = 0;
-      
-        function atualizarSlide() {
-          imagens.style.transform = `translateX(-${index * 100}vw)`;
-        }
-      
-        function avancarSlide() {
-          index = (index + 1) % total;
-          atualizarSlide();
-        }
-      
-        function voltarSlide() {
-          index = (index - 1 + total) % total;
-          atualizarSlide();
-        }
-      
-        // Automático a cada 4 segundos
-        setInterval(avancarSlide, 4000);
-      </script>
-      
-    <!--Introdução2-->
-    <section>
-        <p>Se você ama viajar, sonha com novos destinos ou simplesmente adora descobrir culturas, sabores e paisagens diferentes, este é o seu lugar!</p> 
-        <p>Aqui no <strong>Explorando o Mundo</strong>, cada post é um convite para embarcar em uma nova aventura — seja pelas ruas encantadoras da Europa, praias paradisíacas do Brasil, trilhas escondidas ou cidades vibrantes ao redor do planeta.</p>
-            
-        <p> Nosso objetivo é inspirar, informar e ajudar você a planejar viagens incríveis com dicas reais, roteiros personalizados, curiosidades culturais e muitas fotos de tirar o fôlego. Arrume as malas (nem que seja só na imaginação) e venha explorar o mundo com a gente!</p>
-    </section>
+        <script>
+            const imagens = document.getElementById("imagens");
+            const total = imagens.children.length;
+            let index = 0;
         
+            function atualizarSlide() {
+            imagens.style.transform = `translateX(-${index * 100}vw)`;
+            }
+        
+            function avancarSlide() {
+            index = (index + 1) % total;
+            atualizarSlide();
+            }
+        
+            function voltarSlide() {
+            index = (index - 1 + total) % total;
+            atualizarSlide();
+            }
+        
+            // Automático a cada 4 segundos
+            setInterval(avancarSlide, 4000);
+        </script>
+        
+        <!--Introdução2-->
+        <section>
+            <p>Se você ama viajar, sonha com novos destinos ou simplesmente adora descobrir culturas, sabores e paisagens diferentes, este é o seu lugar!</p> 
+            <p>Aqui no <strong>Explorando o Mundo</strong>, cada post é um convite para embarcar em uma nova aventura — seja pelas ruas encantadoras da Europa, praias paradisíacas do Brasil, trilhas escondidas ou cidades vibrantes ao redor do planeta.</p>
+                
+            <p> Nosso objetivo é inspirar, informar e ajudar você a planejar viagens incríveis com dicas reais, roteiros personalizados, curiosidades culturais e muitas fotos de tirar o fôlego. Arrume as malas (nem que seja só na imaginação) e venha explorar o mundo com a gente!</p>
+        </section>
+
+        <section>
+            <div style="max-width: 100%; margin: auto; padding: 15px; border: 1px solid #ccc;">
+            <h3 style="text-align: center;">Novos Destinos para Explorar</h3>
+            <article>
+                <h4><a href="https://www.alganoronha.com.br/post/pontos-tur%C3%ADsticos-em-fernando-de-noronha" target="_blank" title="Fernando de Noronha" style="text-decoration: none; color: #333;">Fernando de Noronha, Brasil</a></h4>
+                <img src="Fernando-De-Noronha.webp" alt="Foto de Fernando de Noronha, no Brasil" title="Fernanddo de Noronha" style="height: 300px; width: 300px;" >
+                <p>Um paraíso brasileiro com praias deslumbrantes como a Baía do Sancho e Baía dos Porcos.</p>
+            </article>
+            <article>
+                <h4><a href="https://elquarto.com/blog/bangkok-tailandia/" target="_blank" title="Bangkok" style="text-decoration: none; color: #333;">Bangkok, Tailândia</a></h4>
+                <img src="temple-wat-arun-bangkok.jpg" alt="Foto de Bangkok, na Tailândia" title="Marrocos" style="height:300px; width: 300px;" >
+                <p>Um lugar onde espiritualidade, história e beleza se encontram em perfeita harmonia.</p>
+            </article>
+            <article>
+                <h4><a href="https://www.tripadvisor.com.br/Tourism-g298219-Beppu_Oita_Prefecture_Kyushu-Vacations.html" target="_blank" title="Beppu" style="text-decoration: none; color: #333;">Beppu, Japão</a></h4>
+                <img src="Beppu-(1)-natural-onsen.jpg" alt="Foto de Beppu, no Japão" title="Beppu" style="height: 300px; width: 300px;" >
+                <p>Conhecida por suas fontes termais (onsens), oferece uma experiência relaxante e cultural única.</p>
+            </article>
+            </div>
+        </section>
+    </main>
+
     <!--Rodapé-->
     <footer>
         <p>&copy; 2025 Explorando o Mundo. Todos os direitos reservados.</p>

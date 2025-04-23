@@ -78,63 +78,52 @@
             text-align: center;
             padding: 20px;
         }
-        @media (max-widch: 768px) {
-        nav ul {
-            flex-direction: column;
-            align-items: center;
+
+        /*Carrossel de imagens*/
+        .carrossel {
+            position: relative;
+            width: 100vw;
+            height: 400px; /* Pode ajustar se quiser mais ou menos alto */
+            overflow: hidden;
+            margin: 0 auto;
         }
-        header h1 {
-            font-size: 2rem;
+        
+        .imagens {
+            display: flex;
+            width: 300%; /* 100% por imagem */
+            height: 100%;
+            transition: transform 0.5s ease-in-out;
         }
-        header h2 {
-            font-size: 1rem;
+        
+        .imagens img {
+            width: 100vw;
+            height: 100%;
+            object-fit: cover;
+            flex-shrink: 0;
         }
-    }
-    .carrossel {
-        position: relative;
-        width: 100vw;
-        height: 400px; /* Pode ajustar se quiser mais ou menos alto */
-        overflow: hidden;
-        margin: 0 auto;
-      }
-      
-      .imagens {
-        display: flex;
-        width: 300%; /* 100% por imagem */
-        height: 100%;
-        transition: transform 0.5s ease-in-out;
-      }
-      
-      .imagens img {
-        width: 100vw;
-        height: 100%;
-        object-fit: cover;
-        flex-shrink: 0;
-      }
-      
-      .carrossel button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(0,0,0,0.5);
-        border: none;
-        color: white;
-        font-size: 28px;
-        padding: 10px;
-        cursor: pointer;
-        z-index: 10;
-        transition: background 0.3s;
-      }
-      
-      .carrossel button:hover {
-        background-color: rgba(0,0,0,0.8);
-      }
-      
-      .anterior {
-        left: 10px;
-      }
-      
-      .proximo {
-        right: 10px;
-      }
-      
+        
+        .carrossel button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0,0,0,0.5);
+            border: none;
+            color: white;
+            font-size: 28px;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 10;
+            transition: background 0.3s;
+        }
+        
+        .carrossel button:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+        
+        .anterior {
+            left: 10px;
+        }
+        
+        .proximo {
+            right: 10px;
+        }
